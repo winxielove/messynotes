@@ -1,0 +1,81 @@
+$maize: #EFBA5F;
+$tomato: #f06449ff;
+$ivory: rgb(255, 252, 237);
+$vivid-sky-blue: #5bc3ebff;
+$rich-black: rgb(28, 28, 28);
+
+@font-face {
+    font-family: roboto-slab;
+    src: url("/font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
+:root {
+    font-family: roboto-slab;
+}
+
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    color: $rich-black;
+    background-color: $ivory;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.Header {
+    place-self: center;
+}
+
+.Ditto {
+    place-self: center;
+    width: 80%;
+}
+
+.ditto-box {
+    font-family: roboto-slab;
+    font-weight: 400;
+    font-size: xx-large;
+    background-color: #F9E5C3;
+    border: none;
+    border-bottom: $maize 4px solid;
+    padding: 1rem 1rem .25rem 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    width: 100%;
+
+    ::spelling-error {
+        text-decoration: none;
+    }
+}
+
+.ditto-box:focus-visible {
+    outline: none;
+}
+
+.ditto-words {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.ditto-words span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.messynotes-title {
+    font-size: 5rem;
+
+    span {
+        color: $maize;
+    }
+}
