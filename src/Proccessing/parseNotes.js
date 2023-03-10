@@ -1,7 +1,7 @@
 import links from "./links.json"
 
 const parseNotes = (notes) => {
-    return ("sent back!")
+    return notes
 }
 
 export default parseNotes;
