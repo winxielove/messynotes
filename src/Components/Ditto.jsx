@@ -34,7 +34,7 @@ const Ditto = () => {
                     if (e.key == "Enter") {
                         e.preventDefault()
 
-                        setDittoOutput([...dittoOutputRef.current, dittoHtmlRef.current.split(" ")])
+                        setDittoOutput([...dittoOutputRef.current, parseNotes(dittoHtmlRef.current.split(" "))])
                         setDittoHtml("")
                     }
                 }}
@@ -43,9 +43,15 @@ const Ditto = () => {
             <div className='ditto-output'>
                 {dittoOutput.map((o, i) => {
                     return (
-                        <h1 key={i}>
-                            {o}
-                        </h1>
+                        <div key={i} className="ditto-output-sentence">
+                            {o.map((c, i) => {
+                                return (
+                                    <h1 key={i} className={`ditto-part ditto-part-${c.link}`}>
+                                        {c.content}
+                                    </h1>
+                                )
+                            })}
+                        </div>
                     )
                 })}
             </div>
