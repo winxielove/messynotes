@@ -6,14 +6,15 @@
     ],
     "is": [
         "is",
-        "a"
+        "isa"
     ],
-    "is-a": [
-        "is a",
-        "is an"
+    "a": [
+        "a",
+        "an"
     ],
     "is-not": [
         "isn't",
+        "isnt",
         "is not"
     ]
 }

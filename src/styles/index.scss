@@ -35,7 +35,9 @@ html, body, #root {
 .App {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -48,12 +50,11 @@ html, body, #root {
     width: 3rem;
     height: 3rem;
     align-items: center;
-    background-color: var(--accent-3-light);
-    border: var(--accent-3) 4px solid;
+    border: var(--text-1) 4px solid;
     margin: .5rem;
     padding: .125rem;
     border-radius: 1rem;
-    color: var(--accent-3);
+    color: var(--text-1);
     cursor: pointer;
 }
 
@@ -113,8 +114,8 @@ html, body, #root {
 .ditto-part-if {
     color: darkgoldenrod;
 }
-.ditto-part-is-a {
-    color: aquamarine;
+.ditto-part-a {
+    color: darkorchid;
 }
 .ditto-part-is-not {
     color: darkred;

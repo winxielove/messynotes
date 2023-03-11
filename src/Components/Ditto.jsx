@@ -34,7 +34,7 @@ const Ditto = () => {
                     if (e.key == "Enter") {
                         e.preventDefault()
 
-                        setDittoOutput([...dittoOutputRef.current, parseNotes(dittoHtmlRef.current.split(" "))])
+                        setDittoOutput([parseNotes(dittoHtmlRef.current.split(" ")), ...dittoOutputRef.current])
                         setDittoHtml("")
                     }
                 }}
